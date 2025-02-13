@@ -40,7 +40,7 @@ if user_input := st.chat_input("Type your message here..."):
     st.session_state.messages.append({"role": "user", "content": user_input})
     with st.chat_message("user"):
         st.write(user_input)
-
+    user_input = user_input + ". Answer in Spanish always, even your thinking."
     # 2. Prepare API call
     if api_mode == "LLM Chat":
         api_url = "http://50.28.84.22:8000/chat/"
