@@ -24,8 +24,8 @@ if api_mode == "MarIA base":
 
 st.sidebar.markdown("""
 **Instrucciones**  
-1. Escoge entre `MarIA base` or `Agente Ingenieria`.  
-2. Si use `MarIA base`, seleccione un rol (`user`, `engineer`, or `admin`).  
+1. Escoge entre `MarIA base` o `Agente Ingenieria`.  
+2. Si usa `MarIA base`, seleccione un rol (`user`, `engineer`, or `admin`).  
 3. Ingrese su mensaje y de Enter o click en el icono de flecha.  
 """)
 
