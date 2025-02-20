@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # Add a title
-st.title("Chat Interface with MarIA Agent")
+st.title("Chatea con MarIA")
 
 # Initialize session state for messages
 if "messages" not in st.session_state:
@@ -17,16 +17,16 @@ if "messages" not in st.session_state:
 
 # Sidebar options
 st.sidebar.header("Settings")
-api_mode = st.sidebar.radio("Choose API Mode:", ["MarIA base", "Agente Ingenieria"])
+api_mode = st.sidebar.radio("Escoge modo API:", ["MarIA base", "Agente Ingenieria"])
 
 if api_mode == "MarIA base":
-    role = st.sidebar.selectbox("Select Your Role", ["user", "engineer", "admin"], index=0)
+    role = st.sidebar.selectbox("Selecciona tu rol", ["user", "engineer", "admin"], index=0)
 
 st.sidebar.markdown("""
-**Instructions**  
-1. Choose between `MarIA base` or `Agente Ingenieria`.  
-2. If using `MarIA base`, select a role (`user`, `engineer`, or `admin`).  
-3. Type your message and hit Enter or click the arrow icon.  
+**Instrucciones**  
+1. Escoge entre `MarIA base` or `Agente Ingenieria`.  
+2. Si use `MarIA base`, seleccione un rol (`user`, `engineer`, or `admin`).  
+3. Ingrese su mensaje y de Enter o click en el icono de flecha.  
 """)
 
 # Display previous conversation
